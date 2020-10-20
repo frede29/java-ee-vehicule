@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Groupe6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>ServletReservation</servlet-name>
+  <servlet-class>controller.ServletReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletReservation</servlet-name>
+  <url-pattern>/ServletReservation</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ServletVehicule</servlet-name>
+  <servlet-class>controller.ServletVehicule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletVehicule</servlet-name>
+  <url-pattern>/ServletVehicule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ServletClient</servlet-name>
+	  <servlet-class>controller.ServletClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletClient</servlet-name>
+  <url-pattern>/ServletClient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ServletGestionVehicule</servlet-name>
+	  <servlet-class>controller.ServletGestionVehicule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletGestionVehicule</servlet-name>
+  <url-pattern>/Administrateur/ServletGestionVehicule</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	  <servlet-name>ServletListeVehicule</servlet-name>
+	  <servlet-class>controller.ServletListeVehicule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletListeVehicule</servlet-name>
+  <url-pattern>/Administrateur/ServletListeVehicule</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ServletListeReservation</servlet-name>
+	  <servlet-class>controller.ServletListeReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletListeReservation</servlet-name>
+  <url-pattern>/Administrateur/ServletListeReservation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>ServletListeClient</servlet-name>
+	  <servlet-class>controller.ServletListeClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ServletListeClient</servlet-name>
+  <url-pattern>/Administrateur/ServletListeClient</url-pattern>
+  </servlet-mapping>
+
+</web-app>
